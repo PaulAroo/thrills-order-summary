@@ -34,7 +34,7 @@ body {
 }
 
 .cont__bdy {
-  margin: 1em 3em;
+  margin: 1em 8%;
   text-align: center;
 }
 
@@ -79,7 +79,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-right: 4em;
+  margin-right: 2em;
 }
 
 .plan p {
