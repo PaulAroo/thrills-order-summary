@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  height: 96vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url(./images/pattern-background-desktop.svg) no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: min(85%, 28rem);
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0px 20px 20px 0px hsl(245deg 75% 52% / 10%);
+}
+
+.card > img {
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.cont__bdy {
+  margin: 1em 3em;
+  text-align: center;
+}
+
+.cont__bdy > h2 {
+  font-weight: 900;
+}
+
+.cont__bdy p {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.7rem;
+}
+
+button {
+  padding: 0.9em 2em;
+  font-size: 1rem;
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  background-color: hsl(245, 75%, 52%);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  box-shadow: 0px 0px 12px 2px hsla(245, 75%, 52%, 0.4);
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsl(225, 100%, 98%);
+  padding: 0.9em;
+  border-radius: 0.6rem;
+  margin: 2em 0;
+}
+
+.plan > div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 4em;
+}
+
+.plan p {
+  margin: 0;
+}
+
+.plan span {
+  font-weight: 700;
+}
+
+.plan a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+.plan a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.cont__bdy > p:last-child {
+  font-weight: 900;
+}
+
+.cont__bdy > p:last-child:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  .container {
+    background: url(./images/pattern-background-mobile.svg) no-repeat;
+    background-color: hsl(225, 100%, 94%);
+  }
+
+  .cont__bdy {
+    margin: 1em 1.5em;
+  }
+
+  .plan > div {
+    margin-right: 1.5em;
+  }
+}
